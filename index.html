@@ -1028,10 +1028,12 @@ document.addEventListener(
 
 function sendDataToGoogleSheets(status) {
 
-    const payload = {
+const payload = {
 
-        timestamp_client:
-            new Date().toISOString(),
+    type: "posttest",
+
+    timestamp_client:
+        new Date().toISOString(),
 
         nama:
             document.getElementById("nama").value.trim(),
